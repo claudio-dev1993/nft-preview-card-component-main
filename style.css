@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    width: 1440px;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 12px; 
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 12px;
+}
+
+#section-main-image {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0 0 0;
+
+    background-image: url(/images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+#section-main-image img {
+    opacity: 0%;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#section-main-image img:hover { 
+opacity: 90%;
+background-color: hsla(178, 100%, 50%, 0.521);
+padding: 75px; 
+}
+
+#section-main-text,
+#section-price-info,
+#section-author {
+    width: 200px;
+    margin: 10px;  
+}
+
+#section-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section-main-text a,
+#section-author a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+#section-main-text a:hover,
+#section-author a:hover,
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#section-price-info {  
+    display: flex;
+    justify-content: space-between;  
+}
+
+#eth-text {
+    color: hsl(178, 100%, 50%);  
+}
+
+#eth-text img {
+    margin-right: 5px;
+}
+
+#section-author {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;   
+}
+
+#section-author p {
+    margin: 0px 13px;
+}
+
+#section-author img {
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+
+.attribution {
+    color: hsl(215, 51%, 70%);
+    font-size: 12px;
+    height: 40px;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
